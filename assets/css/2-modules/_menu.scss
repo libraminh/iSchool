@@ -1,0 +1,100 @@
+.menu {
+  border-bottom: 1px solid $border-color;
+  height: 100px;
+  transition: all .2s ease-in-out;
+
+  .navbar {
+    flex: 1 !important;
+    background: transparent !important;
+    padding: 0;
+
+    .navbar-brand {
+      padding: 0;
+    }
+
+    .navbar-nav {
+      margin-right: 8rem !important;
+
+      a {
+        color: $white-color;
+        line-height: 98px;
+        border-bottom: 2px solid transparent;
+        transition: all .2s ease-in-out;
+        padding-top: 0;
+        padding-bottom: 0;
+        @include hoverColor($white-color);
+
+
+        &:hover {
+          border-color: $accent-color;
+        }
+      }
+    }
+  }
+
+  .bag-icon {
+    font-size: 30px;
+    color: $white-color;
+    position: relative;
+  }
+
+  &-badge {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 50%;
+    background: $accent-color1;
+  }
+
+  .collapse.navbar-collapse {
+    justify-content: flex-end !important;
+  }
+}
+
+.menu-white {
+  background: $white-color !important;
+  border: none !important;
+
+  .navbar {
+    background: $white-color !important;
+  }
+
+  .navbar-nav {
+    a {
+      color: $dark-color !important;
+    }
+  }
+
+  .bag-icon {
+    color: $dark-color;
+  }
+}
+
+.menu-open {
+  height: 90px;
+  border: none !important;
+
+  .navbar {
+    background: $white-color !important;
+    border-bottom: 1px solid $text-color !important;
+  }
+
+  .navbar-nav {
+    a {
+      color: $dark-color !important;
+      line-height: 87px !important;
+    }
+  }
+
+  .bag-icon {
+    color: $dark-color !important;
+  }
+}
+
+.menu-white-logo {
+  .navbar-brand {
+    background-image: url('../img/home/logo-1.png') !important;
+  }
+}

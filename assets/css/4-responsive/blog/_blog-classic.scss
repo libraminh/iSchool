@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  .blog-classic-page {
+    .col-md-12:last-child {
+      .card-body {
+        transform: none;
+      }
+    }
+  }
+}

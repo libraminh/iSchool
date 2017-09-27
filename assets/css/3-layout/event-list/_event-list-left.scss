@@ -1,0 +1,20 @@
+.event-list-left {
+  .card {
+    .card-img-top {
+      width: 360px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .btn-globe {
+      color: $accent-color1;
+      @include hoverColor($accent-color);
+    }
+  }
+
+  .pagination-wrap {
+    justify-content: flex-start;
+  }
+}
